@@ -1,0 +1,118 @@
+﻿
+// Start of question: MultipleChoiceQ (Pregunta 1)
+::LocalDateQ1:: ¿En qué paquete está contenida la clase LocalDate? {
+~swing
+=time
+~awt
+~util
+}
+// Start of question: MissingWordQ (Pregunta 2)
+::LocalDateQ2:: La clase LocalDate es un objeto que no se puede modificar, es decir es {=inmutable}.
+// Start of question: MultipleChoiceQ (Pregunta 3)
+::LocalDateQ3:: LocalDate es una fecha simple que devuelve una fecha sin horas: {
+=%50%Verdadero
+~%-25%Falso
+=%100%Verdadero, pero también acepta fechas tales como 2 de febrero de 2020
+~%-25%Ninguna de las respuestas anteriores es correcta
+}
+// Start of question: ShortAnswerQ (Pregunta 4)
+::LocalDateQ4:: LocalDate necesita de otras clases para representar una zona horario concreta {
+=Verdadero
+~Falso
+}
+// Start of question: ShortAnswerQ (Pregunta 5)
+::LocalDateQ5:: Una instancia de LocalDate puede producir resultados impredecibles {
+~Verdadero
+~Falso
+=Necesita de otras clases para evitar este problema
+~Ninguna es correcta
+}
+// Start of question: ShortAnswerQ (Pregunta 6)
+::LocalDateQ6:: ¿Cuál de estos métodos no pertenece a la clase LocalDate? {
+=pow();
+~now();
+~getDayOfWeek();
+~getYear();
+}
+// Start of question: MatchingQ (Pregunta 7)
+::LocalDateQ7:: ¿Qué hace cada método? {
+=now(); -> 
+Devuelve la hora del sistema actual
+=getDayOfYear(); -> 
+Devuelve un entero(int) con el día del año procedente del campo day-of-year
+=getYear(); -> 
+Devuelve el campo year en formato entero
+=getMonthValue(); -> 
+Devuelve el día del mes desde el 1 al 12
+}
+// Start of question: ShortAnswerQ (Pregunta 8)
+::LocalDateQ8:: La interfaz serializable se puede usar en la clase LocalDate {
+=Verdadero
+~Falso
+}
+// Start of question: MissingWordQ (Pregunta 9)
+::LocalDateQ9:: El método {=isAfter()} comprueba si la fecha introducida es posterior a la fecha actual, devuelve true o false.
+// Start of question: MissingWordQ (Pregunta 10)
+::LocalDateQ10:: El método {=isBefore()} comprueba si al fecha introducida es anterior a la fecha actual, devuelve true o false.
+// Start of question: ShortAnswerQ (Pregunta 11)
+::LocalDateQ11:: Tenemos este cógido: LocalDate variable \= LocalDate.now(); ¿Qué devuelve System.out.println(variable); ? {
+~01-06-2017
+=2017-06-01
+~06-01-2017
+~Ninguna es correcta
+}
+// Start of question: MultipleChoiceQ (Pregunta 12)
+::LocalDateQ12:: ¿Qué devuelve este cógido: variable.plusDays(20) si se lo añadimos a la pregunta anterior? {
+~%-25%01-06-2017
+~%-25%06-2017-01
+=%100%2017-06-01
+=%50%2017-06-21
+}
+// Start of question: MultipleChoiceQ (Pregunta 13)
+::LocalDateQ13:: ¿Qué devuelve este código: variable \= variable.plusDays(5) si se lo añadimos a la pregunta anterior? {
+=%100%2017-06-06
+~%-25%06-06-2017
+~%-25%2017-06-01
+~%-25%2017-11-01
+}
+// Start of question: MultipleChoiceQ (Pregunta 14)
+::LocalDateQ14:: En este código: LocalDate variable2 \= LocalDate.of(2017,14,08); ¿Qué está mal? {
+~%-25%El primer argumento son los días
+=%50%El primer argumento es el año
+=%100%El segundo argumento son los meses por lo tanto 14 no es válido como mes
+~%-25%El tercer argumento son los meses
+}
+// Start of question: MultipleChoiceQ (Pregunta 15)
+::LocalDateQ15:: ¿Es correcto este código? LocalDate variable3 \= LocalDate.of(2017,Month.JUNE,1) {
+=%100%Sí, es totalmente correcto
+~%-50%No, el formato es erroneo
+}
+// Start of question: MissingWordQ (Pregunta 16)
+::LocalDateQ16:: En el código variable4 \= LocalDate.ofYearDay(2017, 32) se refiere al 1 de febrero
+// Start of question: MatchingQ (Pregunta 17)
+::LocalDateQ17:: Tomando como referencia este código: variable5 \= LocalDate.now(); Une cada código con su resultado: {
+=variable5.plusWeek(2) -> 
+Suma 2 semanas(14 días) a la fecha actual
+=variable5.minusYear(2) -> 
+Resta 2 años a la fecha actual
+=variable5.withYear(2014) -> 
+Devuelve una copia de la fecha actual con el año 2014
+=variable5.withMonth(08) -> 
+Devuelve una copia de la fecha actual con el mes de agosto
+}
+// Start of question: MissingWordQ (Pregunta 18)
+::LocalDateQ18:: Con variable5.getMonth() obenemos como resultado {=Month.JUNE}
+// Start of question: ShortAnswerQ (Pregunta 19)
+::LocalDateQ19:: Con este código: variable5.getMonthValue() obtenemos: {
+~9
+=6
+~14
+~12
+}
+// Start of question: ShortAnswerQ (Pregunta 20)
+::LocalDateQ20:: Con este código: variable5.getDayOfWeek() y teniendo en cuenta que hoy es 2 de junio de 2017 obtenemos: {
+=DayofWeek.FRIDAY
+~Month.JUNE
+~2017
+~DayOfWeek.MONDAY
+}
